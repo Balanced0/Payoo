@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +38,22 @@
     </style>
   </head>
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <h1>Hello Monkey!</h1>
+    <div class="home-logo pt-[210px] mb-[32px] max-w-3xs mx-auto">
+      <img src="./assets/Logo-full.png" alt="home-logo">
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-sm mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral text-base font-medium">Mobile Number</label>
+          <input maxlength="11" minlength="11" type="email" class="input rounded-full bg-base-200" placeholder="Enter your number" />
+          <label class="label text-neutral text-base font-medium">4 Digit Pin</label>
+          <input maxlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-primary mt-4 rounded-full">Login</button>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="./script/login.js"></script>
   </body>
 </html>
