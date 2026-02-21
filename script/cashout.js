@@ -1,12 +1,7 @@
 document.getElementById("cashout-btn").addEventListener("click", function(){
-    const agentInput = document.getElementById("agent-number-input");
-    const agentNumber = agentInput.value;
-
-    const withdrawAmountInput = document.getElementById("cashout-amount-input");
-    const withdrawAmount = withdrawAmountInput.value;
-
-    const pinInput = document.getElementById("cashout-pin-input");
-    const pin = pinInput.value;
+    const agentNumber = getValueFromInput("agent-number-input");
+    const withdrawAmount = getValueFromInput("cashout-amount-input");
+    const pin = getValueFromInput("cashout-pin-input");
 
     if(agentNumber.length < 11 || agentNumber.length > 11){
         alert("Invalid Agent Number");
@@ -15,7 +10,9 @@ document.getElementById("cashout-btn").addEventListener("click", function(){
     
     const currentBalanceInput = document.getElementById("balance");
     const currentBalance = currentBalanceInput.innerText;
+
     const newBalance = Number(currentBalance) - Number(withdrawAmount);
+    
     if(newBalance < 0){
         alert("You are too poor to withdraw that much");
         return;
