@@ -11,7 +11,7 @@ document.getElementById("btn-id").addEventListener("click", function(){
     if(phoneNumber === "01234567890" && pinNumber === "1234"){
         //if matched send to home page
         alert("login Successful");
-        window.location.assign("../home.html");
+        window.location.assign("home.html");
     }
     else{
         //else alert login failed
