@@ -112,6 +112,61 @@
     </section>
 
     <section id="cashout" class="w-11/12 mx-auto">
+        <h2 class="text-lg font-semibold text-neutral my-4">Add Money</h2>
+      <div
+        class="card bg-base-100 w-full shrink-0 shadow-sm mx-auto rounded-2xl"
+      >
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral text-base font-medium"
+              >Select a Bank</label
+            >
+            <select id="addMoney-Bank" class="select rounded-full bg-base-200 w-full label">
+              <option disabled selected>Select Bank</option>
+              <option value="BRAC">BRAC Bank</option>
+              <option value="UTTARA">Uttara Bank</option>
+              <option value="CITY">CITY Bank</option>
+            </select>
+            <label class="label text-neutral text-base font-medium"
+              >Bank Account Number</label
+            >
+            <input
+              id="account-number-input"
+              maxlength="11"
+              minlength="11"
+              type="number"
+              class="input rounded-full bg-base-200 w-full"
+              placeholder="Enter 11 digit account number"
+            />
+            <label class="label text-neutral text-base font-medium"
+              >Amount to Add</label
+            >
+            <input
+              id="add-amount-input"
+              maxlength="4"
+              type="number"
+              class="input rounded-full bg-base-200 w-full"
+              placeholder="Add Amount to withdraw"
+            />
+            <label class="label text-neutral text-base font-medium"
+              >Pin Number</label
+            >
+            <input
+              id="add-pin-input"
+              maxlength="4"
+              type="password"
+              class="input rounded-full bg-base-200 w-full"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">
+              Add Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <section id="cashout" class="w-11/12 mx-auto hidden">
         <h2 class="text-lg font-semibold text-neutral my-4">Cash Out</h2>
       <div
         class="card bg-base-100 w-full shrink-0 shadow-sm mx-auto rounded-2xl"
