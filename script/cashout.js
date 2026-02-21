@@ -12,7 +12,7 @@ document.getElementById("cashout-btn").addEventListener("click", function(){
     const currentBalance = currentBalanceInput.innerText;
 
     const newBalance = Number(currentBalance) - Number(withdrawAmount);
-    
+
     if(newBalance < 0){
         alert("You are too poor to withdraw that much");
         return;
